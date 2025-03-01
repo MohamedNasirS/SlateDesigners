@@ -35,7 +35,8 @@ const Navbar = () => {
             className="h-8 md:h-10 transition-transform duration-500 group-hover:rotate-12"
             style={{ objectFit: 'contain', objectPosition: 'left' }}
           />
-          <span className="font-jost font-bold text-white text-xl hidden sm:block">Slate Designers</span>
+
+          <span className="font-jost font-bold text-white text-xl">Slate Designers</span>
         </a>
 
         {/* Desktop Navigation */}
