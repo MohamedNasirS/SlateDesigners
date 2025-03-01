@@ -56,44 +56,39 @@ const HeroSection = () => {
             <div className="pt-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <a 
                 href="#services" 
-                className="button-hover inline-block bg-gradient-to-r from-slate-accent to-purple-600 text-white font-medium py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+                className="button-hover inline-block bg-gradient-to-r from-slate-accent to-purple-600 text-white font-medium py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 cursor-pointer"
               >
                 Explore
               </a>
             </div>
           </div>
-          
-          <div className="relative flex justify-center">
-            <div className="hero-image relative w-full max-w-lg transition-transform ease-out animate-float">
-              <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" 
-                alt="Web Design" 
-                className="rounded-2xl shadow-2xl object-cover animate-fade-in opacity-0"
-                style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
-                onLoad={(e) => e.currentTarget.classList.add('opacity-100')}
-              />
+                      <div className="relative flex justify-center">
+                        <div className="hero-image relative w-full h-[300px] md:h-auto md:max-w-lg transition-transform ease-out animate-float">
+                          <img 
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" 
+                            alt="Web Design" 
+                            className="rounded-2xl shadow-2xl object-cover w-full h-full animate-fade-in opacity-0"
+                            style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
+                            onLoad={(e) => e.currentTarget.classList.add('opacity-100')}
+                          />
               
-              {/* Floating elements */}
-              <div className="absolute -top-10 -right-10 w-24 h-24 bg-white/10 backdrop-blur-md rounded-xl p-3 shadow-lg animate-float" style={{ animationDelay: '1s' }}>
-                <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
-                  alt="Code" 
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
+                          {/* Floating elements */}
+                          <div className="absolute -top-5 md:-top-10 -right-5 md:-right-10 w-16 h-16 md:w-24 md:h-24 bg-white/10 backdrop-blur-md rounded-xl p-3 shadow-lg animate-float" style={{ animationDelay: '1s' }}>
+                            <img 
+                              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
+                              alt="Code" 
+                              className="w-full h-full object-cover rounded-lg"
+                            />
+                          </div>
               
-              <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-white/10 backdrop-blur-md rounded-xl p-3 shadow-lg animate-float" style={{ animationDelay: '2s' }}>
-                <div className="w-full h-full bg-slate-accent/30 rounded-lg flex items-center justify-center">
-                  <span className="text-xl font-bold gradient-text">UX</span>
-                </div>
-              </div>
-              
-              <div className="absolute top-1/2 -translate-y-1/2 -left-16 w-12 h-12 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center shadow-lg animate-float" style={{ animationDelay: '1.5s' }}>
-                <div className="w-6 h-6 bg-slate-accent/50 rounded-full"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+                          <div className="absolute -bottom-4 md:-bottom-8 -left-4 md:-left-8 w-14 h-14 md:w-20 md:h-20 bg-white/10 backdrop-blur-md rounded-xl p-3 shadow-lg animate-float" style={{ animationDelay: '2s' }}>
+                            <div className="w-full h-full bg-slate-accent/30 rounded-lg flex items-center justify-center">
+                              <span className="text-lg md:text-xl font-bold gradient-text">UX</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
       </div>
     </section>
   );

@@ -22,10 +22,7 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300 ease-in-out px-6 md:px-10 py-4", 
-        scrolled ? "bg-slate-darker/90 backdrop-blur-md shadow-lg" : "bg-transparent"
-      )}
+      className="fixed top-0 w-full z-50 transition-all duration-300 ease-in-out px-6 md:px-10 py-4 bg-slate-darker backdrop-blur-md shadow-lg"
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <a href="/" className="flex items-center group">
@@ -90,7 +87,6 @@ const NavLinks = ({ mobile, setIsMenuOpen }: NavLinksProps) => {
   const links = [
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
-    { name: "Projects", href: "#projects" },
   ];
 
   return (
@@ -112,5 +108,4 @@ const NavLinks = ({ mobile, setIsMenuOpen }: NavLinksProps) => {
     </>
   );
 };
-
 export default Navbar;

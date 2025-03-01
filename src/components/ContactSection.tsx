@@ -69,9 +69,10 @@ const ContactSection = () => {
                     <div className="w-10 h-10 rounded-full bg-slate-accent/20 flex items-center justify-center flex-shrink-0">
                       <Mail className="w-5 h-5 text-slate-accent" />
                     </div>
-                    <div>
+                    <div className="break-words w-full">
                       <h4 className="text-sm font-medium text-slate-light/70 mb-1">Email Us</h4>
-                      <a href="mailto:hello@slatedesigners.com" className="text-lg hover:text-slate-accent transition-colors">
+                      <a href="mailto:hello@slatedesigners.com" 
+                         className="text-lg hover:text-slate-accent transition-colors break-all">
                         Slatedesigners@gmail.com
                       </a>
                     </div>
