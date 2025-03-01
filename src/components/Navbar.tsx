@@ -60,11 +60,27 @@ const Navbar = () => {
       {/* Mobile Navigation Menu */}
       <div 
         className={cn(
-          "fixed inset-0 bg-slate-darker/95 backdrop-blur-md z-40 md:hidden transition-all duration-300 ease-in-out pt-20",
+          "fixed inset-0 bg-slate-darker backdrop-blur-md z-40 md:hidden transition-all duration-300 ease-in-out pt-20",
           isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         )}
       >
-        <div className="flex flex-col items-center gap-8 p-8 stagger-animation">
+        <div className="flex flex-col items-center gap-8 p-8 stagger-animation bg-slate-darker">
+          <a href="/" className="flex items-center group mb-8">
+            <img 
+              src="/lovable-uploads/logo 123.png" 
+              alt="Slate Designers Logo" 
+              className="h-8 md:h-10 transition-transform duration-500 group-hover:rotate-12"
+              style={{ objectFit: 'contain', objectPosition: 'left' }}
+            />
+            <span className="font-jost font-bold text-white text-xl">Slate Designers</span>
+          </a>
+          <button 
+            className="absolute top-6 right-6 text-white cursor-pointer"
+            onClick={() => setIsMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            <X size={24} />
+          </button>
           <NavLinks mobile setIsMenuOpen={setIsMenuOpen} />
           <a 
             href="#contact" 
@@ -75,8 +91,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-    </nav>
-  );
+    </nav>  );
 };
 
 interface NavLinksProps {
