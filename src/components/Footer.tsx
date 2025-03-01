@@ -73,23 +73,22 @@ const Footer = () => {
               Subscribe to our newsletter to receive updates and exclusive offers.
             </p>
             
-            <form className="flex">
+            <form className="flex flex-col sm:flex-row gap-2 sm:gap-0">
               <input 
                 type="email" 
                 placeholder="Your email address" 
-                className="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-slate-accent focus:border-transparent transition-all"
+                className="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-slate-accent focus:border-transparent transition-all"
               />
               <button 
                 type="submit" 
-                className="bg-slate-accent text-white px-4 py-2 rounded-r-lg hover:bg-slate-accent/80 transition-colors"
+                className="bg-slate-accent text-white px-4 py-2 rounded-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-slate-accent/80 transition-colors"
               >
                 Subscribe
               </button>
             </form>
           </div>
         </div>
-        
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-light/50 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} Slate Designers. All rights reserved.
           </p>
