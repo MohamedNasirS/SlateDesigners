@@ -85,7 +85,7 @@ const ContactSection = () => {
                     <div>
                       <h4 className="text-sm font-medium text-slate-light/70 mb-1">Call Us</h4>
                       <a href="tel:+15551234567" className="text-lg hover:text-slate-accent transition-colors">
-                        +1 (555) 123-4567
+                        +91 90801 16526
                       </a>
                     </div>
                   </div>
