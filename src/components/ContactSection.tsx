@@ -71,7 +71,7 @@ const ContactSection = () => {
                     </div>
                     <div className="break-words w-full">
                       <h4 className="text-sm font-medium text-slate-light/70 mb-1">Email Us</h4>
-                      <a href="mailto:hello@slatedesigners.com" 
+                      <a href="mailto:Slatedesigners@gmail.com" 
                          className="text-lg hover:text-slate-accent transition-colors break-all">
                         Slatedesigners@gmail.com
                       </a>
@@ -84,7 +84,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="text-sm font-medium text-slate-light/70 mb-1">Call Us</h4>
-                      <a href="tel:+15551234567" className="text-lg hover:text-slate-accent transition-colors">
+                      <a href="tel:+919080116526" className="text-lg hover:text-slate-accent transition-colors">
                         +91 90801 16526
                       </a>
                     </div>
